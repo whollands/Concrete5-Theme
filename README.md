@@ -1,6 +1,8 @@
 # Concrete5-Theme
 A simple customizable theme for concrete5! By [Will Hollands](http://hollands123.com)
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Concrete5_logo.jpg" width="150" height="150" align="right"/>
+
 It features the ability to change almost all styles, and also add a header background image. See the theme in use on [GDoc Ltd.](http://gdoc.org.uk) or [Underwood Surgery](http://underwoodsurgery.co.uk).
 
 This theme also includes a feature to only display a tracking code to guests. Place your HTML tracking code in `/includes/TRACKING_CODE.php` and it will be hidden when users are signed in to your website.
