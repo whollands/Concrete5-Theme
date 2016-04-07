@@ -1,0 +1,2 @@
+Customizable Theme
+A simple and fully customisable theme for Concrete5 which is responsive for both mobile, tablet and desktop.

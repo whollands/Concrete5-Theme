@@ -1,0 +1,57 @@
+/* -----------------------
+Responsive Styles
+------------------------*/
+
+@media (min-width: 55em)
+{
+	.header 
+	{
+		padding: 4em 3em;
+		/* not needed
+		background: url(../img/header-bg.jpg);
+		background-position: center; 
+		background-size:cover;
+		*/
+	}
+	.nav-bar { padding: 1em 3em; }
+	.content { padding: 2em 3em; }
+
+	.main
+	{
+		float: left;
+		width: 65%;
+		margin-right: 5%;
+		margin-bottom: 1em;
+	}
+
+	.aside
+	{
+		float: left;
+		width: 30%;
+		margin-bottom: 1em;
+	}
+
+	.footer { padding: 2em 3em; }
+	
+	.navigation li
+	{
+		display: inline;
+		margin: 0 1em 0 0;
+	}
+	
+	.navigation a
+	{
+		display: inline;
+		padding: 0;
+		border-bottom: 0;
+	}
+	
+	.navigation a:active, .navigation a:focus
+	{
+		background:none;
+		color:#fff;
+	}
+	
+	.navigation.showhide { display:none; }
+	.navigation.mainnav { display:block; }
+}

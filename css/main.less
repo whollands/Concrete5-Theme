@@ -1,0 +1,363 @@
+/* -----------------------
+
+(c) Copyright Will Hollands 2015
+
+------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:100,400,700);
+@import url(http://fonts.googleapis.com/css?family=Noticia+Text:200,400,700,900);
+
+@import "presets/defaults.less";
+
+body
+{
+	margin: 0;
+	padding: 0;
+	color: @body-text-color;
+	background-color: #eee;
+	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6
+{
+	color:@body-heading-color;
+	margin: 0 0 .5em;
+	font-weight: 500;
+	line-height: 1em;
+}
+
+.content h1 { font-size: 2.25em; } /* 36px */
+.content h2 { font-size: 1.75em; } /* 28px */
+.content h3 { font-size: 1.375em; } /* 22px */
+.content h4 { font-size: 1.125em; } /* 18px */
+.content h5 { font-size: 1em; } /* 16px */
+.content h6 { font-size: .875em; } /* 14px */
+
+.content p
+{
+	margin: 0 0 1.5em;
+	line-height: 1.5;
+}
+
+.content blockquote
+{
+	padding: 1em 2em;
+	margin: 0 0 2em;
+	border-left: 5px solid @body-quote-color;
+	font-style: italic;
+}
+
+.content hr
+{
+	height: 0;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	border: 0;
+	border-top: 3px solid @body-hr-color;
+}
+
+.content table
+{
+	background-color: transparent;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-top: 1px solid #ddd;
+}
+
+.content table thead
+{
+	color:#fff;
+	background:rgb(139,193,85);
+}
+
+.content th, .content td
+{
+	padding: .5em 1em;
+	vertical-align: top;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.content a:link { color: @body-link-color; }
+.content a:visited { color: @body-link-color; }
+.content a:focus { color: @body-link-hover-color; }
+.content a:hover { color: @body-link-hover-color; }
+.content a:active { color: @body-link-hover-color; }
+
+/* -----------------------
+Layout styles
+------------------------*/
+
+.container
+{
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.header
+{
+	color: @header-text-color;
+	background: url(@header-background-image) no-repeat @header-background-color; /* custom */
+	background-size:cover;
+	background-position:center; 
+	padding: 2em 1.25em;
+	margin:0;
+}
+
+.header h1, .header h2, .header h3 { color:@header-heading-color; }
+.header a { color:@header-text-color; text-decoration:underline; }
+
+.header-heading { margin: 0; }
+
+.nav-bar
+{
+	background: @navigation-background-color;
+	padding: 0.1em 0em;
+}
+
+.content
+{
+	overflow: hidden;
+	padding: 1em 1.25em;
+	background-color: #fff;
+}
+
+.main, .aside
+{
+	margin-bottom: 1em;
+}
+
+.footer
+{
+	color: @footer-text-color;
+	background: @footer-background-color;
+	padding: 1em 1.25em;
+}
+
+.footer p
+{
+	font-size:0.9em;
+}
+
+.footer a
+{
+	color: @footer-link-color;
+	text-decoration:underline;
+}
+.footer a:hover
+{
+	color: @footer-link-hover-color;
+	text-decoration:none;
+}
+/* -----------------------
+Nav
+------------------------*/
+.nav-selected { text-decoration:underline; }
+
+.nav
+{
+	margin: 0;
+	padding: 0;
+}
+
+.navigation.showhide {display:block;}
+.navigation.mainnav { display:none; }
+
+/* IMPORTANT
+
+Nav in concrete5 needs the custom class .navigation
+otherwise all other navs throughout will be white, with white background!
+
+*/
+
+.navigation li
+{
+	display: inline;
+	margin: 0;
+	list-style: none;
+}
+
+.navigation a, .nav a
+{
+display: block;
+padding: .7em 1.25em;
+}
+.navigation a
+{
+	
+	color: @navigation-text-color;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
+.navigation a:link { color: @navigation-text-color; }
+.navigation a:visited { color: @navigation-text-color; }
+
+.navigation a:focus
+{
+	color: black;
+	background: white;
+}
+
+.navigation a:hover
+{
+	color: @navigation-text-color;
+	text-decoration:underline;
+}
+
+.navigation a:active
+{
+	color: black;
+	text-decoration:underline;
+	background:white;
+}
+
+/* -----------------------
+Forms and Buttons
+------------------------*/
+
+.form-elements label
+{
+	display:block;
+	font-weight:bold;
+}
+
+.form-elements input,
+.form-elements select,
+.form-elements textarea
+{
+width:100%;
+background:#fff;
+color:#000;
+font-size:18px;
+border: 1px solid #d1d1d1;
+padding: 7px 5px 6px 5px !important;
+line-height: 1;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px; 
+}
+
+
+.form-elements select
+{
+height:30px;
+}
+
+.form-elements input[type=button],
+.form-elements input[type=submit],
+.form-elements input[type=reset]
+{
+width:auto;
+color:#fff;
+background:#D8272A;
+border:none;
+outline:none;
+cursor:pointer;
+}
+
+.form-elements input[type=button]:hover,
+.form-elements input[type=submit]:hover,
+.form-elements input[type=reset]:hover
+{
+width:auto;
+color:#fff;
+background:#206EAB;
+}
+
+.form-elements input[type=button]:active,
+.form-elements input[type=submit]:active,
+.form-elements input[type=reset]:active
+{
+width:auto;
+color:#fff;
+background:#288CD8;
+cursor:wait;
+}
+
+
+
+/* -----------------------
+Single styles
+------------------------*/
+
+.content img { max-width: 100%; }
+
+/*
+.btn
+{
+	color: #fff !important;
+	background-color: #1a5978;
+	border-color: #222;
+	display: inline-block;
+	padding: .5em 1em;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.2;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: .2em;
+	text-decoration: none;
+}
+
+.btn:hover
+{
+	color: #fff !important;
+	background-color: #297CA6;
+}
+
+.btn:focus
+{
+	color: #fff !important;
+	background-color: #63ACD0;
+}
+
+.btn:active
+{
+	color: #fff !important;
+	background-color: #63ACD0;
+}
+*/
+
+.table
+{
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.list-unstyled
+{
+	padding-left: 0;
+	list-style: none;
+}
+
+.list-inline
+{
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+}
+
+.list-inline > li
+{
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+/* -----------------------
+
+SEE responsive.css for responsive styles
+
+these alter for desktop computers...
+
+------------------------*/

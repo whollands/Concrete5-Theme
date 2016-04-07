@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<styles version="1.0">
+	<set name="Header">
+		<style name="Heading Color" variable="header-heading" type="color" />
+		<style name="Text Color" variable="header-text" type="color" />
+        <style name="Background Image" variable="header-background" type="image" />
+        <style name="Background Color" variable="header-background" type="color" />
+    </set>
+    
+    <set name="Navigation">
+    	<style name="Text Color" variable="navigation-text" type="color" />
+    	<style name="Text Size" variable="navigation-text" type="size" />
+        <style name="Background Color" variable="navigation-background" type="color" />
+    </set>
+    
+    <set name="Body">
+        <style name="Heading Color" variable="body-heading" type="color" />
+        <style name="Text Color" variable="body-text" type="color" />
+        <style name="Horizontal Rule Color" variable="body-hr" type="color" />
+        <style name="Quote Color" variable="body-quote" type="color" />
+        <style name="Link Color" variable="body-link" type="color" />
+        <style name="Link Hover Color" variable="body-link-hover" type="color" />
+    </set>
+    
+    <set name="Footer">
+    	<style name="Background Color" variable="footer-background" type="color" />
+    	<style name="Text Color" variable="footer-text" type="color" />
+        <style name="Link Color" variable="footer-link" type="color" />
+        <style name="Link Hover Color" variable="footer-link-hover" type="color" />
+    </set>
+    
+</styles>
