@@ -7,16 +7,19 @@ Apparently the NHS still do...
 
 ------------------------*/
 
+/* -----------------------
+Responsive Styles
+------------------------*/
+
 	.header 
 	{
-		padding: 3em 3em;
-		/*
-		background: url(../img/header-bg.jpg) no-repeat;
+		padding: 4em 3em;
+		/* not needed
+		background: url(../img/header-bg.jpg);
 		background-position: center; 
 		background-size:cover;
 		*/
 	}
-	
 	.nav-bar { padding: 1em 3em; }
 	.content { padding: 2em 3em; }
 
@@ -49,8 +52,7 @@ Apparently the NHS still do...
 		padding: 0;
 		border-bottom: 0;
 	}
-		
-		
+	
 	.navigation a:active, .navigation a:focus
 	{
 		background:none;
@@ -59,3 +61,4 @@ Apparently the NHS still do...
 	
 	.navigation.showhide { display:none; }
 	.navigation.mainnav { display:block; }
+	.form-control { width:50%; }

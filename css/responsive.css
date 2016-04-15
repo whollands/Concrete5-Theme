@@ -54,4 +54,5 @@ Responsive Styles
 	
 	.navigation.showhide { display:none; }
 	.navigation.mainnav { display:block; }
+	.form-control { width:50%; }
 }

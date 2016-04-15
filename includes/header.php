@@ -12,6 +12,13 @@ defined('C5_EXECUTE') or die("Access Denied.");
 		<?php Loader::element('header_required'); ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<link rel="stylesheet" media="all" href="<?php  echo $this->getStylesheet("main.less"); ?>" />
+<!--
+
+Theme (C) Will Hollands 2015, http://hollands123.com/
+
+Available on http://github.com/whollands under GNU Public License.
+
+-->
 <?php
 
 // Microsoft IE 8 and below hate the new @media css for mobile
@@ -69,8 +76,6 @@ else
 			});
 		</script>
 		<!-- Mobile show/hide script -->
-		
-	 	<!-- Theme (C) Will Hollands 2015, http://hollands123.com/ -->
 	 	
 	</head>
 <body>
