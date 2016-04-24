@@ -40,3 +40,6 @@ This theme also includes a feature to only display a tracking code to guests. Pl
 Currently we do not support multi-level navigation menus in the ***auto-nav*** block
 
 You will need to disable this option by editing the ***auto-nav*** block and changing the ***Child Pages*** dropdown to ***none***.
+
+### Problems
+Use the github [issue reporter](https://github.com/whollands/Acorn/issues) to send bugs and issues found with the theme, alternatively [contact me](http://hollands123.com/contact) directly
