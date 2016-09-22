@@ -5,7 +5,9 @@ defined('C5_EXECUTE') or die("Access Denied.");
 // (c) Copyright Will Hollands 2015
 // http://hollands123.com/
 
-?><div class="footer">
+?>
+</article>
+<div class="footer">
 			<div class="container">
 				<?php $a = new GlobalArea('Footer1'); $a->display($c); ?>
 	
