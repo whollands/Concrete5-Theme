@@ -11,21 +11,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 			<div class="container">
 				<?php $a = new GlobalArea('Footer1'); $a->display($c); ?>
 	
-		<?
-         $u = new User();
-         if ($u->isRegistered()) { ?>
-            <p><? 
-            if (Config::get("ENABLE_USER_PROFILES")) {
-               $userName = '<a href="' . $this->url('/profile') . '">' . $u->getUserName() . '</a>';
-            } else {
-               $userName = $u->getUserName();
-            }
-            ?>
-            <?=t('Currently logged in as <b>%s</b>.', $userName)?> <a href="<?php echo URL::to('/login', 'logout', Loader::helper('validation/token')->generate('logout'))?>"><?php echo t('Sign Out.')?></a>
-            
-         <? } else { ?>
-            <a href="<?=$this->url('/login', 'forward', $c->getCollectionID()); ?>">Sign in</a>
-         <? } ?></p>
+		    <p><?php echo Core::make('helper/navigation')->getLogInOutLink(); ?></p>
 			</div>
 		</div>
 	</div>
